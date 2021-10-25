@@ -5,9 +5,445 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Suntech Shop</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- Font Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <div id="app" class="app">
+      <header id="header" class="header container-fluid px-68">
+        <div class="row justify-content-between">
+          <h1 class="header__title">Suntech Viet Nam</h1>
+
+          <ul class="header__navbar-list row justify-content-between">
+            <li class="header__navbar-item"><a href="#">Home</a></li>
+            <li class="header__navbar-item"><a href="#">Women</a></li>
+            <li class="header__navbar-item"><a href="#">Men</a></li>
+            <li class="header__navbar-item"><a href="#">Kids</a></li>
+            <li class="header__navbar-item"><a href="#">Jewellery</a></li>
+            <li class="header__navbar-item"><a href="#">Accessories</a></li>
+          </ul>
+
+          <ul class="header__icon-group row justify-content-between">
+            <li class="header__icon-item">
+              <a href="#">
+                <i class="fas fa-shopping-cart"></i>
+                <span>3</span>
+              </a>
+            </li>
+            <li class="header__icon-item">
+              <a href="#">
+                <i class="fas fa-search"></i>
+              </a>
+            </li>
+            <li class="header__icon-item">
+              <a href="#">
+                <i class="fas fa-bars"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <main id="main" class="main">
+        <div id="banner" class="banner">
+          <h2 class="banner__title">The Best <span>Woocommerce</span></h2>
+        </div>
+
+        <div id="best-sellers" class="best-sellers">
+          <div class="best-sellers__introduce">
+            <h3 class="best-sellers-introduce__title">Best sellers</h3>
+            <p class="best-sellers-introduce__slogan">The best production from us</p>
+            <p class="best-sellers-introduce__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+
+          <div class="card">
+            <ul class="card__icon-list">
+              <li class="card__icon-item">
+                <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+              </li>
+              <li class="card__icon-item">
+                <a href="#"><i class="fas fa-heart"></i></a>
+              </li>
+              <li class="card__icon-item">
+                <a href="#"><i class="fas fa-retweet"></i></a>
+              </li>
+            </ul>
+            <img width="200" src="./assets/images/card/shoes.jpg" alt="" class="card__images" />
+            <h3 class="card__title">Cruise Dual Analog</h3>
+            <p class="card__price">$250.00</p>
+          </div>
+
+          <div class="card">
+            <ul class="card__icon-list">
+              <li class="card__icon-item">
+                <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+              </li>
+              <li class="card__icon-item">
+                <a href="#"><i class="fas fa-heart"></i></a>
+              </li>
+              <li class="card__icon-item">
+                <a href="#"><i class="fas fa-retweet"></i></a>
+              </li>
+            </ul>
+            <img width="200" src="./assets/images/card/The_man.jpg" alt="" class="card__images" />
+            <h3 class="card__title">Crown Summit Backpack</h3>
+            <p class="card__price">$250.00</p>
+          </div>
+
+          <div class="card">
+            <ul class="card__icon-list">
+              <li class="card__icon-item">
+                <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+              </li>
+              <li class="card__icon-item">
+                <a href="#"><i class="fas fa-heart"></i></a>
+              </li>
+              <li class="card__icon-item">
+                <a href="#"><i class="fas fa-retweet"></i></a>
+              </li>
+            </ul>
+            <img width="200" src="./assets/images/card/The_man.jpg" alt="" class="card__images" />
+            <h3 class="card__title">Crown Summit Backpack</h3>
+            <p class="card__price">$250.00</p>
+          </div>
+
+          <div class="card">
+            <ul class="card__icon-list">
+              <li class="card__icon-item">
+                <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+              </li>
+              <li class="card__icon-item">
+                <a href="#"><i class="fas fa-heart"></i></a>
+              </li>
+              <li class="card__icon-item">
+                <a href="#"><i class="fas fa-retweet"></i></a>
+              </li>
+            </ul>
+            <img width="200" src="./assets/images/card/The_man.jpg" alt="" class="card__images" />
+            <h3 class="card__title">Crown Summit Backpack</h3>
+            <p class="card__price">$250.00</p>
+          </div>
+        </div>
+
+        <div id="special" class="special">
+          <div class="special__list">
+            <div class="special__item">
+              <img width="200" src="./assets/images/special/diamon.jpg" alt="" class="special__images" />
+              <h3 class="special__title">Special Offers</h3>
+              <p class="special__description">Shop Big Save Big</p>
+            </div>
+          </div>
+
+          <div class="special__list">
+            <div class="special__item">
+              <img width="200" src="./assets/images/special/diamon.jpg" alt="" class="special__images" />
+              <h3 class="special__title">Special Offers</h3>
+              <p class="special__description">Shop Big Save Big</p>
+            </div>
+          </div>
+
+          <div class="special__list">
+            <div class="special__item">
+              <img width="200" src="./assets/images/special/diamon.jpg" alt="" class="special__images" />
+              <h3 class="special__title">Special Offers</h3>
+              <p class="special__description">Shop Big Save Big</p>
+            </div>
+          </div>
+
+          <div class="special__list">
+            <div class="special__item">
+              <img width="200" src="./assets/images/special/diamon.jpg" alt="" class="special__images" />
+              <h3 class="special__title">Special Offers</h3>
+              <p class="special__description">Shop Big Save Big</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="fashion" class="fashion">
+          <img width="200" class="fashion__images" src="./assets/images/fashion/background_summer.png" alt="" />
+          <img width="200" class="fashion__images" src="./assets/images/fashion/background_summer.png" alt="" />
+          <img width="200" class="fashion__images" src="./assets/images/fashion/background_summer.png" alt="" />
+        </div>
+
+        <div id="feature-product" class="feature-product">
+          <div class="feature-product__header">
+            <h3 class="feature-product-header__title">Feature Product</h3>
+            <p class="feature-product-header__description">Newest trends from top brands</p>
+          </div>
+
+          <div class="feature-container">
+            <div class="card">
+              <ul class="card__icon-list">
+                <li class="card__icon-item">
+                  <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li class="card__icon-item">
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+                <li class="card__icon-item">
+                  <a href="#"><i class="fas fa-retweet"></i></a>
+                </li>
+              </ul>
+              <img width="200" src="./assets/images/card/shoes.jpg" alt="" class="card__images" />
+              <h3 class="card__title">Cruise Dual Analog</h3>
+              <p class="card__price">$250.00</p>
+            </div>
+
+            <div class="card">
+              <ul class="card__icon-list">
+                <li class="card__icon-item">
+                  <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li class="card__icon-item">
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+                <li class="card__icon-item">
+                  <a href="#"><i class="fas fa-retweet"></i></a>
+                </li>
+              </ul>
+              <img width="200" src="./assets/images/card/shoes.jpg" alt="" class="card__images" />
+              <h3 class="card__title">Cruise Dual Analog</h3>
+              <p class="card__price">$250.00</p>
+            </div>
+
+            <div class="card">
+              <ul class="card__icon-list">
+                <li class="card__icon-item">
+                  <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li class="card__icon-item">
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+                <li class="card__icon-item">
+                  <a href="#"><i class="fas fa-retweet"></i></a>
+                </li>
+              </ul>
+              <img width="200" src="./assets/images/card/shoes.jpg" alt="" class="card__images" />
+              <h3 class="card__title">Cruise Dual Analog</h3>
+              <p class="card__price">$250.00</p>
+            </div>
+
+            <div class="card">
+              <ul class="card__icon-list">
+                <li class="card__icon-item">
+                  <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li class="card__icon-item">
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+                <li class="card__icon-item">
+                  <a href="#"><i class="fas fa-retweet"></i></a>
+                </li>
+              </ul>
+              <img width="200" src="./assets/images/card/shoes.jpg" alt="" class="card__images" />
+              <h3 class="card__title">Cruise Dual Analog</h3>
+              <p class="card__price">$250.00</p>
+            </div>
+
+            <div class="card">
+              <ul class="card__icon-list">
+                <li class="card__icon-item">
+                  <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li class="card__icon-item">
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+                <li class="card__icon-item">
+                  <a href="#"><i class="fas fa-retweet"></i></a>
+                </li>
+              </ul>
+              <img width="200" src="./assets/images/card/shoes.jpg" alt="" class="card__images" />
+              <h3 class="card__title">Cruise Dual Analog</h3>
+              <p class="card__price">$250.00</p>
+            </div>
+
+            <div class="card">
+              <ul class="card__icon-list">
+                <li class="card__icon-item">
+                  <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li class="card__icon-item">
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+                <li class="card__icon-item">
+                  <a href="#"><i class="fas fa-retweet"></i></a>
+                </li>
+              </ul>
+              <img width="200" src="./assets/images/card/shoes.jpg" alt="" class="card__images" />
+              <h3 class="card__title">Cruise Dual Analog</h3>
+              <p class="card__price">$250.00</p>
+            </div>
+
+            <div class="card">
+              <ul class="card__icon-list">
+                <li class="card__icon-item">
+                  <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li class="card__icon-item">
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+                <li class="card__icon-item">
+                  <a href="#"><i class="fas fa-retweet"></i></a>
+                </li>
+              </ul>
+              <img width="200" src="./assets/images/card/shoes.jpg" alt="" class="card__images" />
+              <h3 class="card__title">Cruise Dual Analog</h3>
+              <p class="card__price">$250.00</p>
+            </div>
+
+            <div class="card">
+              <ul class="card__icon-list">
+                <li class="card__icon-item">
+                  <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li class="card__icon-item">
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+                <li class="card__icon-item">
+                  <a href="#"><i class="fas fa-retweet"></i></a>
+                </li>
+              </ul>
+              <img width="200" src="./assets/images/card/shoes.jpg" alt="" class="card__images" />
+              <h3 class="card__title">Cruise Dual Analog</h3>
+              <p class="card__price">$250.00</p>
+            </div>
+
+            <div class="card">
+              <ul class="card__icon-list">
+                <li class="card__icon-item">
+                  <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li class="card__icon-item">
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+                <li class="card__icon-item">
+                  <a href="#"><i class="fas fa-retweet"></i></a>
+                </li>
+              </ul>
+              <img width="200" src="./assets/images/card/shoes.jpg" alt="" class="card__images" />
+              <h3 class="card__title">Cruise Dual Analog</h3>
+              <p class="card__price">$250.00</p>
+            </div>
+
+            <div class="card">
+              <ul class="card__icon-list">
+                <li class="card__icon-item">
+                  <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li class="card__icon-item">
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+                <li class="card__icon-item">
+                  <a href="#"><i class="fas fa-retweet"></i></a>
+                </li>
+              </ul>
+              <img width="200" src="./assets/images/card/shoes.jpg" alt="" class="card__images" />
+              <h3 class="card__title">Cruise Dual Analog</h3>
+              <p class="card__price">$250.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="discount" class="discount">
+          <div class="discount__form">
+            <h3 class="discount__title">Get out special discount</h3>
+            <p class="discount__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum laboriosam enim
+              obcaecati qui, ipsum deleniti quod a et accusamus facilis, facere odio possimus ut in
+              similique corrupti aperiam vero quis.
+            </p>
+
+            <form action="" class="discount__form-group">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="discount-form__email"
+                placeholder="Email address"
+              />
+              <button type="submit" class="discount-form__btn">Get coupon now</button>
+            </form>
+          </div>
+
+          <div class="discount__brand">
+            <img width="200" src="./assets/images/brand/cup.png" alt="cup" class="discount-brand__images" />
+            <img width="200"
+              src="./assets/images/brand/restaurant.png"
+              alt="restaurant"
+              class="discount-brand__images"
+            />
+            <img width="200"
+              src="./assets/images/brand/product.png"
+              alt="product"
+              class="discount-brand__images"
+            />
+            <img width="200" src="./assets/images/brand/brand.png" alt="brand" class="discount-brand__images" />
+          </div>
+        </div>
+      </main>
+
+      <footer id="footer" class="footer">
+        <p class="footer__copyright">
+          Copyright 2017 RenoshopBee all right reserved - Design by BeeStudios
+        </p>
+
+        <div class="footer__visa-card">
+          <img width="200"
+            src="./assets/images/footer/icon_visa.jpg"
+            alt="icon_visa"
+            class="footer-visa-card__image"
+          />
+          <img width="200"
+            src="./assets/images/footer/paypal.png"
+            alt="paypal"
+            class="footer-visa-card__image"
+          />
+          <img width="200"
+            src="./assets/images/footer/amazon.png"
+            alt="amazon"
+            class="footer-visa-card__image"
+          />
+          <img width="200"
+            src="./assets/images/footer/maestro.png"
+            alt="maestro"
+            class="footer-visa-card__image"
+          />
+          <img width="200" src="./assets/images/footer/amex.png" alt="amex" class="footer-visa-card__image" />
+        </div>
+      </footer>
+    </div>
   </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"
+  ></script>
 </html>
