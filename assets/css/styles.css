@@ -1,6 +1,133 @@
 /* Add google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap');
 
-html,body{
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* general */
+html,
+body {
   font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+  line-height: 1.4;
+}
+
+/* variable */
+:root {
+  --white-color: #fff;
+  --primary-color: #3cb878;
+  --main-color: #656d75;
+  --black-color: #333333;
+}
+
+/* common */
+.px-68 {
+  padding: 0 68px !important;
+}
+
+/* App */
+.app {
+  font-size: 1.6rem;
+}
+
+/* Header */
+.header {
+  height: 100px;
+}
+
+.header__title {
+  line-height: 100px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+.header__navbar-list {
+  width: 640px;
+}
+
+.header__navbar-item {
+  text-align: center;
+}
+
+.header__navbar-item > a {
+  line-height: 100px;
+  color: var(--main-color);
+  transition: color 0.3s linear;
+  will-change: color;
+  text-transform: uppercase;
+}
+
+.header__navbar-item:hover > a {
+  color: var(--primary-color);
+}
+
+.header__icon-group {
+  width: 107px;
+}
+
+.header__icon-item {
+}
+
+.header__icon-item > a {
+  position: relative;
+  line-height: 100px;
+  color: var(--black-color);
+}
+
+.header__icon-item span {
+  --size: 22px;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  display: inline-block;
+  width: var(--size);
+  height: var(--size);
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: var(--size);
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+/* Main */
+.main {
+}
+
+.banner {
+  position: relative;
+  height: 564px;
+  background: #cac6c2 url('../images/banner/banner.jpg') no-repeat;
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.banner__title {
+  position: absolute;
+  top: 50%;
+  left: 190px;
+  transform: translateY(-50%);
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--black-color);
+}
+
+.banner__title > span {
+  display: block;
+  color: var(--primary-color);
 }
