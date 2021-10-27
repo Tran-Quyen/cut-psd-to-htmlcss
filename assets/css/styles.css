@@ -30,6 +30,9 @@ body {
   --primary-color: #3cb878;
   --main-color: #656d75;
   --black-color: #333333;
+  --gap: 15px;
+  --card-count: 5;
+  --icon-color: #62c592;
 }
 
 /* common */
@@ -37,6 +40,61 @@ body {
   padding: 0 68px !important;
 }
 
+/* Card */
+.card {
+  width: calc((100% - var(--gap) * (var(--card-count) - 1)) / var(--card-count));
+  position: relative;
+  border: none;
+  margin: 10px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.card > .card__icon-list {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+.card:hover > .card__icon-list {
+  opacity: 1;
+}
+
+.card .card__icon-item > a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--icon-color);
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  margin-top: 10px;
+  transition: opacity 0.3s linear;
+}
+
+.card .card__icon-item:hover > a {
+  opacity: 0.7;
+}
+
+.card > .card__images {
+  width: 100%;
+}
+
+.card > .card__content {
+  padding: 0 15px;
+}
+
+.card .card__title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 10px 0;
+}
+
+.card .card__price {
+  color: var(--primary-color);
+}
 /* App */
 .app {
   font-size: 1.6rem;
@@ -108,6 +166,7 @@ body {
 .main {
 }
 
+/* Banner */
 .banner {
   position: relative;
   height: 564px;
@@ -130,4 +189,34 @@ body {
 .banner__title > span {
   display: block;
   color: var(--primary-color);
+}
+
+/*  Best Sellers */
+.best-sellers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.best-sellers__introduce {
+  width: calc((100% - var(--gap) * (var(--card-count) - 1)) / var(--card-count));
+}
+
+.best-sellers-introduce__title {
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.best-sellers-introduce__slogan {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--primary-color);
+}
+
+.best-sellers-introduce__description {
+  font-size: 1.2rem;
+  margin-top: 30px;
 }
