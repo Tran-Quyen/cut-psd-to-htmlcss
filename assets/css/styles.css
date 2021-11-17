@@ -220,3 +220,143 @@ body {
   font-size: 1.2rem;
   margin-top: 30px;
 }
+.app .main .special{
+  display: flex;
+  margin-top: 125px;
+  height: auto;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
+  padding: 50px 1px 30px;
+}
+.app .special__item h3{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 20px auto 2px;
+}
+.app .special__item .special__description{
+  color: #9e9e9f;
+}
+.app .fashion .fashion__images{
+    width: calc(100%/3);
+    height: 40% vh;
+}
+.app .main .fashion{
+  display: flex;
+  justify-content: space-around;
+}
+.app .feature-product{
+  padding: 0 20px;
+}
+.app .feature-product .feature-product__header{
+  margin: 100px auto 50px;
+}
+.app .feature-product__header .feature-product-header__title{
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.app .feature-product__header .feature-product-header__description{
+  color: #3cb878;
+}
+.app .feature-product .feature-product__header{
+  text-align: center;
+}
+.app .feature-container .box1{
+  display: flex;
+  justify-content: space-around;
+} 
+.app .box1 .card{
+  width: 290px;   
+  height: 485px;
+}
+.app .box1 h3{
+  padding-left: 20px;
+}
+.app .box1 p{
+  padding-left: 20px;
+}
+
+.app .feature-container .box2{
+  display: flex;
+  justify-content: space-around;
+} 
+.app .box2 .card{
+  width: 290px;   
+  height: 485px;
+}
+.app .box2 h3{
+  padding-left: 20px;
+}
+.app .box2 p{
+  padding-left: 20px;
+}
+.app .main .discount{
+  display: flex;
+  margin-top: 100px;
+  background-color: #f5f6f9;
+}
+.app .main .discount__form {
+  width: 50%;
+  height: 300px;
+  position: relative;
+  background-color: #777777;
+  background-repeat: no-repeat;
+  background-image: url('../images/bgc/background.jpg');
+  background-position: 0% 0%;
+}
+.app  .discount__form .content1{
+  text-align: center;
+  color:#fff;
+}
+.app .main .discount__form h3{
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-top: 60px;
+}
+.app .main .discount__form p{
+  margin: 20px auto;
+  font-size: 14px;
+  width: 550px;
+}
+.app .main .discount__form .discount-form__email{
+  padding: 10px 130px 10px 30px;
+  border: none;
+  border-radius: 2px;
+}
+.app .main .discount__form .discount-form__btn{
+  padding: 10px 15px;
+  border: none;
+  background-color: #3cb878;
+  border-radius: 2px;
+  margin-left: 20px;
+  color: #fff;
+}
+.app .main .discount__form .image{
+  width: 50%;
+  height: 300px;
+}
+.app .main .discount__brand{
+  display: flex;
+  align-items: center;
+}
+.app .main  .discount-brand__images{
+  margin-left: 60px;
+}
+.app  .footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: black;
+}
+.app .footer .footer__copyright{
+  color: #777777;
+  line-height: 60px;
+  margin-bottom: 0px;
+}
+.app .footer__visa-card .footer-visa-card__image{
+  margin-left: 10px;
+}
